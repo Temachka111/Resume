@@ -28,21 +28,23 @@
 </head>
 <body>
 <div class="container">
-    <h1>Иван Иванов</h1>
+    <h1>Забурьянов Артём Владимирович</h1>
     <p>Начинающий веб-разработчик</p>
 
     <div class="section">
         <h2>Опыт работы</h2>
-        <p><strong>Компания "А",</strong> Стажер (июнь 2023 - август 2023)</p>
+        <p><strong>Нету,</strong> Что умею:</p>
         <ul>
-            <li>Помогал в верстке HTML/CSS.</li>
+            <li>Верстал на HTML/CSS.</li>
             <li>Изучал основы JavaScript.</li>
+            <li>Изучаю Java</li>
+            <li>Пишу грамматно структурированные большие приложения на Spring Boot</li>
         </ul>
     </div>
 
     <div class="section">
         <h2>Образование</h2>
-        <p><strong>Университет IT</strong>, Бакалавр компьютерных наук (2020 - 2024)</p>
+        <p><strong>ОПК сти ниту МИСиС</strong>, Специалист информационных систем (2023 - 2027)</p>
     </div>
 
     <div class="section">
@@ -50,10 +52,24 @@
         <ul>
             <li>HTML5</li>
             <li>CSS3</li>
+            <li>Java</li>
+            <li>Spring Boot</li>
             <li>Git</li>
             <li>IntelliJ IDEA</li>
         </ul>
     </div>
+
+    <div class="section">
+        <h2>Будьте на связи</h2>
+        <button id="subscribeButton">Подписаться на новости</button>
+        <p id="message" style="color: green; display: none;">Спасибо за подписку!</p>
+    </div>
+
+    <script>
+        document.getElementById('subscribeButton').addEventListener('click', function() {
+            document.getElementById('message').style.display = 'block';
+        });
+    </script>
 </div>
 </body>
 </html>
